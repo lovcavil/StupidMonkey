@@ -61,6 +61,13 @@ namespace StupidMonkey.CoreLogic
             CoreTimer.Start();
         }
 
+        public void Destroy()
+        {
+            um = null;
+            pm = null;
+            log = null;
+            CoreTimer.Stop();
+        }
 
         public void run()
         {

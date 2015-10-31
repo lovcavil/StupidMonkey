@@ -25,6 +25,12 @@ namespace StupidMonkey.CoreLogic
              t = new System.Threading.Timer(NewTick, null, TimeSpan.FromMilliseconds(100), TimeSpan.FromMilliseconds(100));
         }
 
+        public static void Stop()
+        {
+            t.Dispose();
+            t = null;
+        }
+
         private static void RaiseNewTick()
         {
             var newTickTime = NewTickTime;
