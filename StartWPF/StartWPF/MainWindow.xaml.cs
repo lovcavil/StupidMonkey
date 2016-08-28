@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CoreManageDll;
+
 
 namespace StartWPF
 {
@@ -28,6 +30,12 @@ namespace StartWPF
         private void button_Click(object sender, RoutedEventArgs e)
         {
             textBlock.Text = "aasfafgaeqwaf";
+            Core c = new Core();
+            c.Name = "StarLee";
+            c.Sex = 'M';
+            c.Age = 28;
+            textBlock.Text = c.Name;
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
