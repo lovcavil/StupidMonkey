@@ -39,7 +39,7 @@ void CCore::start0()
 	return;
 }
 
-void CCore::
+
 
 CCore::CCore()
 {
