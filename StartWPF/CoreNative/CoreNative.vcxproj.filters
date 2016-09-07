@@ -27,5 +27,28 @@
     <ClInclude Include="DatenAttribut.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DataBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoreNative.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Project1\dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Win32Project1\stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
