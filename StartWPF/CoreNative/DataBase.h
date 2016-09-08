@@ -1,4 +1,6 @@
 #pragma once
+#include "boost/pool/singleton_pool.hpp"
+
 class DataBase
 {
 public:
@@ -10,7 +12,7 @@ template<class TORI> class  CData : DataBase
 {
 private:
 	TORI* pData;
-	DataManager* 
+	static DataManger<TORI> dm; 
 public:
 	CData();
 	~CData();

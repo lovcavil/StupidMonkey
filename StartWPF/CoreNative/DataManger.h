@@ -1,4 +1,6 @@
 #pragma once
+#include "boost/pool/singleton_pool.hpp"
+struct MyPoolTag {};
 class DataMangerBase
 {
 public:
@@ -8,7 +10,9 @@ public:
 template <class TORI> class DataManger:DataMangerBase
 {
 private:
-	DataManger* psdm;
+	
+	typedef boost::singleton_pool<MyPoolTag, sizeof(TORI)> SP;
+	SP sp;
 public:
 	DataManger();
 	~DataManger();
