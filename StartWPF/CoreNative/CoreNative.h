@@ -3,6 +3,8 @@
 #include "stdafx.h"
 #include <iostream>
 #include <tchar.h>
+#include "MemoryManager.h"
+#include "CData.h"
 using namespace std;
 
 #ifndef LX_DLL_CLASS_EXPORTS
@@ -35,7 +37,8 @@ private:
 
 void CCore::start0()
 {
-
+	MemoryManager* memoryManager = new MemoryManager();
+	intData* i = new intData();
 	return;
 }
 

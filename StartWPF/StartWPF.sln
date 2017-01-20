@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreDll", "CoreDll\CoreDll.vcxproj", "{9AF2746E-F53E-4568-B238-76ADCB802E32}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B53520C-C845-4993-A506-B4F6DD4C930E} = {0B53520C-C845-4993-A506-B4F6DD4C930E}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreNative", "CoreNative\CoreNative.vcxproj", "{0B53520C-C845-4993-A506-B4F6DD4C930E}"
 EndProject
